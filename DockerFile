@@ -12,7 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the code (your training script)
-COPY updater_vertex.py .
+COPY update_vertex.py .
 
 # Set the command that will run when the container starts
 ENTRYPOINT ["python", "update_vertex.py"]
