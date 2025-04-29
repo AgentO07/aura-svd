@@ -1,6 +1,6 @@
 pandas>=1.0.0
 scikit-learn>=1.0.0 # Surprise depends on scikit-learn
-surprise>=1.1.1 # Or your specific version
+scikit-surprise>=1.1.1 # Or your specific version
 google-cloud-aiplatform
 google-cloud-storage
 # firebase-admin # REMOVED - no longer needed
