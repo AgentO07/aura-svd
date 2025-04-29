@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY updater_vertex.py .
 
 # Set the command that will run when the container starts
-ENTRYPOINT ["python", "updater_vertex.py"]
+ENTRYPOINT ["python", "update_vertex.py"]
