@@ -1,1 +1,18 @@
 
+# Use a standard Python 3.9 image as the base
+FROM python:3.9-slim
+
+# Set a working directory inside the container image
+WORKDIR /app
+
+# Copy ONLY the requirements file first (for better caching)
+COPY requirements.txt .
+
+# Install all libraries listed in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the code (your training script)
+COPY updater_vertex.py .
+
+# Set the command that will run when the container starts
+ENTRYPOINT ["python", "updater_vertex.py"]
