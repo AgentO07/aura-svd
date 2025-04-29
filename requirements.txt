@@ -1,0 +1,15 @@
+pandas>=1.0.0
+scikit-learn>=1.0.0 # Surprise depends on scikit-learn
+surprise>=1.1.1 # Or your specific version
+google-cloud-aiplatform
+google-cloud-storage
+# firebase-admin # REMOVED - no longer needed
+fastapi
+uvicorn[standard] # Includes standard dependencies like websockets, etc.
+pydantic
+google-cloud-aiplatform # For calling Vertex AI
+google-cloud-firestore # For /update-interactions
+firebase-admin # For Auth and Firestore
+requests # Often used by google client libraries implicitly, good to have
+# REMOVED: pandas, surprise, pickle for training
+# Add any other specific libraries
